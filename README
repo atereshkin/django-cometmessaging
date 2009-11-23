@@ -1,4 +1,4 @@
-A Tornado-based Comet server allowing clients to subscribe to AMQP queues. Implemented as a django app (adds cometserver manamement command, "subscribe" template tag and a few other convenience utilities).
+A Tornado-based Comet server allowing clients to subscribe to AMQP queues. Implemented as a django app (adds cometserver management command, "subscribe" template tag and a few other convenience utilities).
 
 NOTE: This is just a rough draft not ready in any way for public consumption. If you still want to use it but can't get the code to work, feel free to contact the author.
 
