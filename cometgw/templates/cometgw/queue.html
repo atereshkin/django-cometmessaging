@@ -1,0 +1,9 @@
+<script type="text/javascript">
+  function listen_{{ exchange }}() {
+    $.get("/comet/{{ exchange }}/{{ queue }}/{{ routing_key }}", {}, function(data) {
+        {{ callback }}(data);
+        listen_{{ exchange }}(); // then launch again
+    });
+  };
+  listen_{{ exchange }}();
+</script>
